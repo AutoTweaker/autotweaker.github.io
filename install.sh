@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "Fetching latest version info..."
-index=$(curl -fsSL https://autotweaker.github.io/index/)
+index=$(curl -fsSL --retry 3 --retry-delay 5 https://autotweaker.github.io/index/)
 REMOTE_VERSION=$(echo "$index" | jq -r '.core.latest.version')
 DEB_URL=$(echo "$index" | jq -r '.core.latest.deb_url')
 
@@ -36,7 +36,7 @@ fi
 
 deb_file=$(mktemp /tmp/autotweaker.XXXXXX.deb)
 chmod 0644 "$deb_file"
-curl -fsSL "$DEB_URL" -o "$deb_file"
+curl -fsSL --retry 3 --retry-delay 5 "$DEB_URL" -o "$deb_file"
 apt install -y --allow-downgrades "$deb_file"
 rm -f "$deb_file"
 
