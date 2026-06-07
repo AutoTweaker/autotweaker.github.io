@@ -3,8 +3,8 @@ set -euo pipefail
 
 echo "Fetching latest version info..."
 index=$(curl -fsSL https://autotweaker.github.io/index/)
-REMOTE_VERSION=$(echo "$index" | jq -r '.core.version')
-DEB_URL=$(echo "$index" | jq -r '.core.deb_url')
+REMOTE_VERSION=$(echo "$index" | jq -r '.core.latest.version')
+DEB_URL=$(echo "$index" | jq -r '.core.latest.deb_url')
 
 if [ -z "$REMOTE_VERSION" ] || [ "$REMOTE_VERSION" = "null" ]; then
     echo "Failed to fetch remote version" >&2
