@@ -18,12 +18,8 @@ else
     LOCAL_VERSION="unknown"
 fi
 
-remote_base="${REMOTE_VERSION%%+*}"
-local_base="${LOCAL_VERSION%%+*}"
-local_base="${local_base//\~/-}"
-
 if [ "$LOCAL_VERSION" != "unknown" ] && \
-   printf '%s\n%s\n' "$remote_base" "$local_base" | sort -V | tail -1 | grep -q "$local_base"; then
+   ! dpkg --compare-versions "$REMOTE_VERSION" gt "$LOCAL_VERSION"; then
     echo "Already up to date: $LOCAL_VERSION"
     exit 0
 fi
