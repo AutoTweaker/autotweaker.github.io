@@ -11,7 +11,12 @@ if [ -z "$REMOTE_VERSION" ] || [ "$REMOTE_VERSION" = "null" ]; then
     exit 1
 fi
 
-LOCAL_VERSION=$(dpkg-query -W -f='${Version}' autotweaker 2>/dev/null || echo "unknown")
+PKG_STATUS=$(dpkg-query -W -f='${db:Status-Status}' autotweaker 2>/dev/null || echo "not-installed")
+if [ "$PKG_STATUS" = "installed" ]; then
+    LOCAL_VERSION=$(dpkg-query -W -f='${Version}' autotweaker)
+else
+    LOCAL_VERSION="unknown"
+fi
 
 remote_base="${REMOTE_VERSION%%+*}"
 local_base="${LOCAL_VERSION%%+*}"
