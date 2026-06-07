@@ -18,8 +18,12 @@ else
     LOCAL_VERSION="unknown"
 fi
 
+remote_base="${REMOTE_VERSION%%+*}"
+local_base="${LOCAL_VERSION%%+*}"
+local_base="${local_base//\~/-}"
+
 if [ "$LOCAL_VERSION" != "unknown" ] && \
-   printf '%s\n%s\n' "$REMOTE_VERSION" "$LOCAL_VERSION" | sort -V | tail -1 | grep -q "$LOCAL_VERSION"; then
+   printf '%s\n%s\n' "$remote_base" "$local_base" | sort -V | tail -1 | grep -q "$local_base"; then
     echo "Already up to date: $LOCAL_VERSION"
     exit 0
 fi
