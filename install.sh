@@ -19,7 +19,7 @@ else
 fi
 
 if [ "$LOCAL_VERSION" != "unknown" ] && \
-   ! dpkg --compare-versions "$REMOTE_VERSION" gt "$LOCAL_VERSION"; then
+   printf '%s\n%s\n' "$REMOTE_VERSION" "$LOCAL_VERSION" | sort -V | tail -1 | grep -q "$LOCAL_VERSION"; then
     echo "Already up to date: $LOCAL_VERSION"
     exit 0
 fi
@@ -33,7 +33,7 @@ fi
 deb_file=$(mktemp /tmp/autotweaker.XXXXXX.deb)
 chmod 0644 "$deb_file"
 curl -fsSL "$DEB_URL" -o "$deb_file"
-apt install "$deb_file"
+apt install -y --allow-downgrades "$deb_file"
 rm -f "$deb_file"
 
 echo "Done."
