@@ -37,7 +37,7 @@ fi
 deb_file=$(mktemp /tmp/autotweaker.XXXXXX.deb)
 chmod 0644 "$deb_file"
 curl -fsSL --retry 3 --retry-delay 5 "$DEB_URL" -o "$deb_file"
-apt install -y --allow-downgrades "$deb_file"
+apt install -y --allow-downgrades --no-install-recommends "$deb_file"
 rm -f "$deb_file"
 
 echo "Done."
