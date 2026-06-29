@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>io.github.autotweaker.api</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../index.html" tabindex="1">
+                    AutoTweaker API
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.1.0-dev+1782748790.f1b84363        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector common-like" data-active="" aria-pressed="true"
+                        data-filter=":api/commonMain">common</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":api/jvmMain">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":api/commonMain"
+                                       data-filter=":api/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":api/jvmMain"
+                                       data-filter=":api/jvmMain"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    AutoTweaker API
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="AutoTweaker API::io.github.autotweaker.api////PointingToDeclaration//-1564543286">
+  <div class="breadcrumbs"><a href="../../index.html">AutoTweaker API</a><span class="delimiter">/</span><span class="current">io.github.autotweaker.api</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="72412285%2FClasslikes%2F-9267965" anchor-label="I18nable" id="72412285%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i18nable/index.html"><span><span>I18nable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="72412285%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-i18nable/index.html">I18nable</a></div><div class="brief "><p class="paragraph">允许对象通过 <a href="i18n.html">i18n</a> 获取 <a href="../io.github.autotweaker.api.i18n/-i18n-service/index.html">I18nService</a></p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2061697457%2FClasslikes%2F-9267965" anchor-label="JsonStorable" id="-2061697457%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-json-storable/index.html"><span>Json</span><wbr></wbr><span><span>Storable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2061697457%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-json-storable/index.html">JsonStorable</a></div><div class="brief "><p class="paragraph">允许对象通过 <a href="store.html">store</a> 获取 <a href="../io.github.autotweaker.api.config/-json-store/index.html">JsonStore</a></p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1267444504%2FClasslikes%2F-9267965" anchor-label="Loggable" id="1267444504%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-loggable/index.html"><span><span>Loggable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1267444504%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-loggable/index.html">Loggable</a></div><div class="brief "><p class="paragraph">允许对象通过 <a href="log.html">log</a> 获取 <span data-unresolved-link="org.slf4j/Logger///PointingToDeclaration/">Logger</span>，AutoTweaker 使用 logback 作为实现，插件仅需依赖 slf4j</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-395469433%2FClasslikes%2F-9267965" anchor-label="Mutable" id="-395469433%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-mutable/index.html"><span><span>Mutable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-395469433%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-mutable/index.html">Mutable</a><span class="token operator">&lt;</span><a href="-mutable/index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">包装一个不可变属性，并提供并发安全的更新方式。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-526330275%2FClasslikes%2F410371219" anchor-label="PairList" id="-526330275%2FClasslikes%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-pair-list/index.html"><span>Pair</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-526330275%2FClasslikes%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-pair-list/index.html">PairList</a><span class="token operator">&lt;</span><a href="-pair-list/index.html">A</a><span class="token punctuation">, </span><a href="-pair-list/index.html">B</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="-pair-list/index.html">A</a><span class="token punctuation">, </span><a href="-pair-list/index.html">B</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph"><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a> 套 <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="53612483%2FClasslikes%2F-9267965" anchor-label="ReentrantMutex" id="53612483%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-reentrant-mutex/index.html"><span>Reentrant</span><wbr></wbr><span><span>Mutex</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="53612483%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-reentrant-mutex/index.html">ReentrantMutex</a> : <a href="-traceable/index.html">Traceable</a></div><div class="brief "><p class="paragraph">基于 <span data-unresolved-link="kotlinx.coroutines.sync/Mutex///PointingToDeclaration/">Mutex</span> 的可重入锁，相同协程以及子协程都允许重入。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="840836123%2FClasslikes%2F-9267965" anchor-label="ServiceRegistry" id="840836123%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-service-registry/index.html"><span>Service</span><wbr></wbr><span><span>Registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="840836123%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-service-registry/index.html">ServiceRegistry</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>trace<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../io.github.autotweaker.api.trace/-trace-recorder/index.html">TraceRecorder</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>store<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../io.github.autotweaker.api.config/-json-store/index.html">JsonStore</a><span class="token punctuation">, </span></span><span class="parameter ">lazySetting<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../io.github.autotweaker.api.config/-setting-service/index.html">SettingService</a><span class="token punctuation">, </span></span><span class="parameter ">lazyI18n<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../io.github.autotweaker.api.i18n/-i18n-service/index.html">I18nService</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">请不要构造此类或访问此类的伴生对象。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2094648631%2FClasslikes%2F-9267965" anchor-label="Settable" id="-2094648631%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-settable/index.html"><span><span>Settable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2094648631%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-settable/index.html">Settable</a></div><div class="brief "><p class="paragraph">允许对象通过 <a href="setting.html">setting</a> 获取 <a href="../io.github.autotweaker.api.config/-setting-service/index.html">SettingService</a></p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-413002834%2FClasslikes%2F-9267965" anchor-label="Traceable" id="-413002834%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-traceable/index.html"><span><span>Traceable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-413002834%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-traceable/index.html">Traceable</a></div><div class="brief "><p class="paragraph">允许对象通过 <a href="trace.html">trace</a> 获取 <a href="../io.github.autotweaker.api.trace/-trace-recorder/index.html">TraceRecorder</a></p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1191876641%2FProperties%2F410371219" anchor-label="APP_NAME" id="1191876641%2FProperties%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-p-p_-n-a-m-e.html"><span>APP_</span><wbr></wbr><span>NAME</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1191876641%2FProperties%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-a-p-p_-n-a-m-e.html">APP_NAME</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1710881615%2FProperties%2F410371219" anchor-label="APP_NAME_LOWERCASE" id="1710881615%2FProperties%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-p-p_-n-a-m-e_-l-o-w-e-r-c-a-s-e.html"><span>APP_</span><wbr></wbr><span>NAME_</span><wbr></wbr><span>LOWERCASE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1710881615%2FProperties%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-a-p-p_-n-a-m-e_-l-o-w-e-r-c-a-s-e.html">APP_NAME_LOWERCASE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1672775054%2FProperties%2F-9267965" anchor-label="CONFIG_PATH" id="1672775054%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-n-f-i-g_-p-a-t-h.html"><span>CONFIG_</span><wbr></wbr><span>PATH</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1672775054%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-o-n-f-i-g_-p-a-t-h.html">CONFIG_PATH</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html">Path</a></div><div class="brief "><p class="paragraph">存储配置及其他数据的目录，使用提供的持久化 API 而不是直接在此路径下存放文件</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1943318751%2FProperties%2F-9267965" anchor-label="i18n" id="1943318751%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="i18n.html"><span><span>i18n</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1943318751%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-i18nable/index.html">I18nable</a><span class="token punctuation">.</span><a href="i18n.html">i18n</a><span class="token operator">: </span><a href="../io.github.autotweaker.api.i18n/-i18n-service/index.html">I18nService</a></div><div class="brief "><p class="paragraph">获取 AutoTweaker 提供的 <a href="../io.github.autotweaker.api.i18n/-i18n-service/index.html">I18nService</a></p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1536797154%2FProperties%2F410371219" anchor-label="INDENT" id="-1536797154%2FProperties%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-d-e-n-t.html"><span><span>INDENT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1536797154%2FProperties%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-i-n-d-e-n-t.html">INDENT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1967936278%2FProperties%2F410371219" anchor-label="LINE" id="1967936278%2FProperties%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-l-i-n-e.html"><span><span>LINE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1967936278%2FProperties%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-l-i-n-e.html">LINE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">----------</code></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1018551996%2FProperties%2F-9267965" anchor-label="log" id="-1018551996%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="log.html"><span><span>log</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1018551996%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-loggable/index.html">Loggable</a><span class="token punctuation">.</span><a href="log.html">log</a><span class="token operator">: </span><span data-unresolved-link="org.slf4j/Logger///PointingToDeclaration/">Logger</span></div><div class="brief "><p class="paragraph">获取 <span data-unresolved-link="org.slf4j/Logger///PointingToDeclaration/">Logger</span>，请遵循日志规范，不要污染程序日志。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-208147865%2FProperties%2F410371219" anchor-label="MASK_CHAR" id="-208147865%2FProperties%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-s-k_-c-h-a-r.html"><span>MASK_</span><wbr></wbr><span>CHAR</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-208147865%2FProperties%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-m-a-s-k_-c-h-a-r.html">MASK_CHAR</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>'*'</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-201458841%2FProperties%2F-9267965" anchor-label="setting" id="-201458841%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="setting.html"><span><span>setting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-201458841%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-settable/index.html">Settable</a><span class="token punctuation">.</span><a href="setting.html">setting</a><span class="token operator">: </span><a href="../io.github.autotweaker.api.config/-setting-service/index.html">SettingService</a></div><div class="brief "><p class="paragraph">获取 AutoTweaker 提供的 <a href="../io.github.autotweaker.api.config/-setting-service/index.html">SettingService</a></p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1254836630%2FProperties%2F410371219" anchor-label="SPACE" id="-1254836630%2FProperties%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-p-a-c-e.html"><span><span>SPACE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1254836630%2FProperties%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-p-a-c-e.html">SPACE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token operator"> = </span>' '</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="318858928%2FProperties%2F-9267965" anchor-label="store" id="318858928%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="store.html"><span><span>store</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="318858928%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-json-storable/index.html">JsonStorable</a><span class="token punctuation">.</span><a href="store.html">store</a><span class="token operator">: </span><a href="../io.github.autotweaker.api.config/-json-store/index.html">JsonStore</a></div><div class="brief "><p class="paragraph">获取 AutoTweaker 提供的 <a href="../io.github.autotweaker.api.config/-json-store/index.html">JsonStore</a>。 同一类获取到的 <a href="../io.github.autotweaker.api.config/-json-store/index.html">JsonStore</a> 始终相同，不同类获取到的 <a href="../io.github.autotweaker.api.config/-json-store/index.html">JsonStore</a> 相互隔离。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-287308739%2FProperties%2F-9267965" anchor-label="TMP_PATH" id="-287308739%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-m-p_-p-a-t-h.html"><span>TMP_</span><wbr></wbr><span>PATH</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-287308739%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-m-p_-p-a-t-h.html">TMP_PATH</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html">Path</a></div><div class="brief "><p class="paragraph">存放临时文件的目录，通常为 <code class="lang-kotlin">/tmp/autotweaker</code></p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="634290133%2FProperties%2F-9267965" anchor-label="trace" id="634290133%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="trace.html"><span><span>trace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="634290133%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="-traceable/index.html">Traceable</a><span class="token punctuation">.</span><a href="trace.html">trace</a><span class="token operator">: </span><a href="../io.github.autotweaker.api.trace/-trace-recorder/index.html">TraceRecorder</a></div><div class="brief "><p class="paragraph">获取 AutoTweaker 提供的 <a href="../io.github.autotweaker.api.trace/-trace-recorder/index.html">TraceRecorder</a>，自身作为 <code class="lang-kotlin">origin</code>。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-669141776%2FFunctions%2F-9267965" anchor-label="_LOG_TRACE_" id="-669141776%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="_-l-o-g_-t-r-a-c-e_.html"><span>_</span><wbr></wbr><span>LOG_</span><wbr></wbr><span>TRACE_</span><wbr></wbr></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-669141776%2FFunctions%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-loggable/index.html">Loggable</a><span class="token punctuation">.</span><a href="_-l-o-g_-t-r-a-c-e_.html"><span class="token function"><strike>_LOG_TRACE_</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">content<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">打印一条用于临时调试的 error 级别日志，特殊的命名便于通过自动化脚本扫描。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1442917464%2FFunctions%2F410371219" anchor-label="allNull" id="1442917464%2FFunctions%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="all-null.html"><span>all</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1442917464%2FFunctions%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="all-null.html"><span class="token function">allNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>items<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">items.all { it == null }</code></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1653936140%2FFunctions%2F-9267965" anchor-label="andLog" id="-1653936140%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="and-log.html"><span>and</span><wbr></wbr><span><span>Log</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1653936140%2FFunctions%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="and-log.html">T</a><span class="token operator">&gt; </span><a href="and-log.html">T</a><span class="token punctuation">.</span><a href="and-log.html"><span class="token function">andLog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">logger<span class="token operator">: </span><span data-unresolved-link="org.slf4j/Logger///PointingToDeclaration/">Logger</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>log<span class="token operator">: </span><span data-unresolved-link="org.slf4j/Logger///PointingToDeclaration/">Logger</span><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="and-log.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="and-log.html">T</a></div><div class="brief "><p class="paragraph">用于在链式调用中插入日志，示例：</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1245428469%2FFunctions%2F410371219" anchor-label="discard" id="1245428469%2FFunctions%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="discard.html"><span><span>discard</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1245428469%2FFunctions%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="discard.html">T</a><span class="token operator">&gt; </span><a href="discard.html">T</a><span class="token punctuation">.</span><a href="discard.html"><span class="token function">discard</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">丢弃对象并返回 <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></p></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="discard.html">T</a><span class="token punctuation">, </span><a href="discard.html">R</a><span class="token operator">&gt; </span><a href="discard.html">T</a><span class="token punctuation">.</span><a href="discard.html"><span class="token function">discard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">result<span class="token operator">: </span><a href="discard.html">R</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="discard.html">R</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">丢弃对象并返回 <a href="discard.html">result</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="259359262%2FFunctions%2F410371219" anchor-label="forEachBetween" id="259359262%2FFunctions%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="for-each-between.html"><span>for</span><wbr></wbr><span>Each</span><wbr></wbr><span><span>Between</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="259359262%2FFunctions%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="for-each-between.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="for-each-between.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="for-each-between.html"><span class="token function">forEachBetween</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span class="token punctuation">(</span><a href="for-each-between.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter ">between<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">遍历对象并调用 <a href="for-each-between.html">action</a>，在每两次遍历中间调用 <a href="for-each-between.html">between</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-888594449%2FFunctions%2F-9267965" anchor-label="initServices" id="-888594449%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init-services.html"><span>init</span><wbr></wbr><span><span>Services</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-888594449%2FFunctions%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="init-services.html"><span class="token function">initServices</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">services<span class="token operator">: </span><a href="-service-registry/index.html">ServiceRegistry</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">请不要调用此方法。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1046602036%2FFunctions%2F410371219" anchor-label="line" id="1046602036%2FFunctions%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="line.html"><span><span>line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1046602036%2FFunctions%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="line.html"><span class="token function">line</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">length<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">-</code> * n</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1842924866%2FFunctions%2F410371219" anchor-label="orNull" id="-1842924866%2FFunctions%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="or-null.html"><span>or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1842924866%2FFunctions%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="or-null.html"><span class="token function">orNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="or-null.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="or-null.html"><span class="token function">orNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="or-null.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">ifEmpty { null }</code></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2059786453%2FFunctions%2F410371219" anchor-label="times" id="2059786453%2FFunctions%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="times.html"><span><span>times</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2059786453%2FFunctions%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a><span class="token punctuation">.</span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">n<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">为 <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/index.html">Char</a> 添加 <code class="lang-kotlin">*</code> 操作符的支持</p></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">n<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">为 <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a> 添加 <code class="lang-kotlin">*</code> 操作符的支持</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="315010484%2FFunctions%2F410371219" anchor-label="toMasked" id="315010484%2FFunctions%2F410371219" data-filterable-set=":api/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-masked.html"><span>to</span><wbr></wbr><span><span>Masked</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="315010484%2FFunctions%2F410371219"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="to-masked.html"><span class="token function">toMasked</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">minLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">15</span><span class="token punctuation">, </span></span><span class="parameter ">prefixKeep<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">5</span><span class="token punctuation">, </span></span><span class="parameter ">suffixKeep<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">4</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">给敏感信息打码，例如 api key。</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

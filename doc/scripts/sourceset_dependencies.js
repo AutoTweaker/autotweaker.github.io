@@ -1,0 +1,1 @@
+sourceset_dependencies='{":api/commonMain":[],":api/jvmMain":[":api/commonMain"],":api/linuxMain":[":api/nativeMain"],":api/linuxX64Main":[":api/linuxMain"],":api/nativeMain":[":api/commonMain"]}'
