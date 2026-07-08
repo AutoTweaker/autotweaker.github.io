@@ -43,7 +43,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.1.0-alpha.34+5bc34eb8        </div>
+0.1.0-alpha.35+c07218c5        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
                 <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
@@ -109,7 +109,7 @@
     <h1 class="cover"><span>Agent</span><wbr></wbr><span><span>API</span></span></h1>
     <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
       <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">AgentAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/AgentAPI.kt#L43">source</a>)</span></span></div><p class="paragraph">用于管理单个 agent 实例的 api。</p><p class="paragraph">大部分方法都重新返回自身（<a href="index.html">AgentAPI</a>）以支持链式调用。</p><p class="paragraph">关于 agent 上下文的基本概念（如“轮次”）请参阅 <a href="../../io.github.autotweaker.api.types.session/-session-context-index/index.html">SessionContextIndex</a></p></div>    </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">AgentAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/AgentAPI.kt#L36">source</a>)</span></span></div><p class="paragraph">用于管理单个 agent 实例的 api。</p><p class="paragraph">大部分方法都重新返回自身（<a href="index.html">AgentAPI</a>）以支持链式调用。</p><p class="paragraph">关于 agent 上下文的基本概念（如“轮次”）请参阅 <a href="../../io.github.autotweaker.api.types.agent/-agent-context-index/index.html">AgentContextIndex</a></p></div>    </div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -128,7 +128,7 @@
                 <div class="title">
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="context.html">context</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api.types.session/-session-context/index.html">SessionContext</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">agent 的实时上下文，完整的消息、工具调用请求均在此索引。</p></div></div>                  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="context.html">context</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api.types.agent/-agent-context/index.html">AgentContext</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">agent 的实时上下文，完整的消息、工具调用请求均在此索引。</p></div></div>                  </div>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@
                 <div class="title">
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="model.html">model</a><span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.session/-model-config/index.html">ModelConfig</a></div><div class="brief "><p class="paragraph">agent 的模型配置，每个 agent 可以拥有独立的模型配置。</p></div></div>                  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="model.html">model</a><span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.agent/-model-config/index.html">ModelConfig</a></div><div class="brief "><p class="paragraph">agent 的模型配置，每个 agent 可以拥有独立的模型配置。</p></div></div>                  </div>
                 </div>
               </div>
             </div>
@@ -196,7 +196,7 @@
                 <div class="title">
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="output.html">output</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api.types.session/-session-output/index.html">SessionOutput</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">agent 的实时输出流，通常为无需持久化的流式数据块或错误信息。</p></div></div>                  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="output.html">output</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api.types.agent/-agent-output/index.html">AgentOutput</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">agent 的实时输出流，通常为无需持久化的流式数据块或错误信息。</p></div></div>                  </div>
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@
                 <div class="title">
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="tool-calling.html">toolCalling</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">agent 正在调用工具的 callId，也就是 <a href="../../io.github.autotweaker.api.types.session/-session-message/-tool/-call/call-id.html">io.github.autotweaker.api.types.session.SessionMessage.Tool.Call.callId</a>。</p></div></div>                  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="tool-calling.html">toolCalling</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">agent 正在调用工具的 callId，也就是 <a href="../../io.github.autotweaker.api.types.agent/-agent-message/-tool/-call/call-id.html">io.github.autotweaker.api.types.agent.AgentMessage.Tool.Call.callId</a>。</p></div></div>                  </div>
                 </div>
               </div>
             </div>
@@ -392,19 +392,19 @@
               </div>
             </div>
           </div>
-<a data-name="-769805784%2FFunctions%2F-9267965" anchor-label="setModel" id="-769805784%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+<a data-name="968478169%2FFunctions%2F-9267965" anchor-label="setModel" id="968478169%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="set-model.html"><span>set</span><wbr></wbr><span><span>Model</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-769805784%2FFunctions%2F-9267965"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="968478169%2FFunctions%2F-9267965"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-model.html"><span class="token function">setModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">config<span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.session/-model-config/index.html">ModelConfig</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AgentAPI</a></div><div class="brief "><p class="paragraph">更新 agent 使用的大模型，下次请求立即生效。</p></div></div>                  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-model.html"><span class="token function">setModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">config<span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.agent/-model-config/index.html">ModelConfig</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AgentAPI</a></div><div class="brief "><p class="paragraph">更新 agent 使用的大模型，下次请求立即生效。</p></div></div>                  </div>
                 </div>
               </div>
             </div>

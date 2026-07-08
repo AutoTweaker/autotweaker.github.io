@@ -43,7 +43,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.1.0-alpha.34+5bc34eb8        </div>
+0.1.0-alpha.35+c07218c5        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
                 <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
@@ -110,7 +110,7 @@
   </div>
   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="compact.html"><span class="token function">compact</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AgentAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/AgentAPI.kt#L150">source</a>)</span></span></div><p class="paragraph">触发 agent 的上下文压缩，如果上下文压缩正在进行，不会重复触发，上下文压缩在后台进行，此方法不会挂起等待上下文压缩完毕。</p><p class="paragraph">除此之外，agent 会在每次 LLM 请求、工具调用结束后自动根据配置的阈值检查当前 Usage 并自动触发上下文压缩。</p><p class="paragraph">agent 的上下文压缩完全在后台进行，不会阻塞 agent 的主事件循环，上下文压缩完毕后将在下一次 LLM 请求立即生效。</p></div>  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="compact.html"><span class="token function">compact</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AgentAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/AgentAPI.kt#L143">source</a>)</span></span></div><p class="paragraph">触发 agent 的上下文压缩，如果上下文压缩正在进行，不会重复触发，上下文压缩在后台进行，此方法不会挂起等待上下文压缩完毕。</p><p class="paragraph">除此之外，agent 会在每次 LLM 请求、工具调用结束后自动根据配置的阈值检查当前 Usage 并自动触发上下文压缩。</p><p class="paragraph">agent 的上下文压缩完全在后台进行，不会阻塞 agent 的主事件循环，上下文压缩完毕后将在下一次 LLM 请求立即生效。</p></div>  </div>
 </div>
     <div class="footer">
         <div class="footer--container">
