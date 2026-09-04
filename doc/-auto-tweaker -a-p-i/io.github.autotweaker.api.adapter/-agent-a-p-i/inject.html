@@ -43,7 +43,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.1.0-alpha.35+c07218c5        </div>
+0.1.0+d217eb7b        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
                 <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
@@ -110,7 +110,7 @@
   </div>
   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="inject.html"><span class="token function">inject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">injection<span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.agent/-context-injection/index.html">ContextInjection</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AgentAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/AgentAPI.kt#L180">source</a>)</span></span></div><p class="paragraph">在 agent 的上下文中注入 XML 标签，相同 id 的标签会去重。</p><p class="paragraph">XML 标签会被注入到当前上下文中的第一条用户消息中，此 api 用于注入不变的系统提示，如果要注入动态的实时信息，请使用 <a href="send.html">send</a>。</p></div>  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="inject.html"><span class="token function">inject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">injection<span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.agent/-context-injection/index.html">ContextInjection</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AgentAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/AgentAPI.kt#L189">source</a>)</span></span></div><p class="paragraph">在 agent 的上下文中注入 XML 标签，相同 id 的标签会去重。</p><p class="paragraph">XML 标签会被注入到当前上下文中的第一条用户消息中，此 api 用于注入不变的系统提示，如果要注入动态的实时信息，请使用 <a href="send.html">send</a>。</p><p class="paragraph">请不要频繁使用此方法，这将导致模型 API 的硬盘缓存失效，并增加费用。</p></div>  </div>
 </div>
     <div class="footer">
         <div class="footer--container">

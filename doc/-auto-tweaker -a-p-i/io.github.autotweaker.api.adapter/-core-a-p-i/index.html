@@ -43,7 +43,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.1.0-alpha.35+c07218c5        </div>
+0.1.0+d217eb7b        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
                 <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
@@ -109,7 +109,7 @@
     <h1 class="cover"><span>Core</span><wbr></wbr><span><span>API</span></span></h1>
     <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
       <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">CoreAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/CoreAPI.kt#L63">source</a>)</span></span></div><p class="paragraph">AutoTweaker/core 提供的 API，主要包含适配器、会话、配置的管理。</p><p class="paragraph">基础设施类的 API 通过 able 接口暴露，参见 <a href="../../io.github.autotweaker.api/-loggable/index.html">io.github.autotweaker.api.Loggable</a>、<a href="../../io.github.autotweaker.api/-traceable/index.html">io.github.autotweaker.api.Traceable</a>、<a href="../../io.github.autotweaker.api/-json-storable/index.html">io.github.autotweaker.api.JsonStorable</a>、<a href="../../io.github.autotweaker.api/-settable/index.html">io.github.autotweaker.api.Settable</a>、<a href="../../io.github.autotweaker.api/-i18nable/index.html">io.github.autotweaker.api.I18nable</a>。</p><p class="paragraph">请确保在调用任何 API 前检查 <a href="-secret-a-p-i/is-unlocked.html">SecretAPI.isUnlocked</a>，否则 <a href="../../io.github.autotweaker.api.types.exception/-secret-store-locked-exception/index.html">SecretStoreLockedException</a> 可能在任何地方抛出。</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">WhiteElephant-abc</p></span><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-adapter/index.html"><span><span>Adapter</span></span></a></div></span></div><div></div></div></div></div><h4 class="tableheader">Throws</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api.types.exception/-secret-store-locked-exception/index.html"><span>Secret</span><wbr></wbr><span>Store</span><wbr></wbr><span>Locked</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">密钥库未解锁（参见 <a href="-secret-a-p-i/index.html">SecretAPI</a>）</p></div></div></div></div></div></div>    </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">CoreAPI</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/adapter/CoreAPI.kt#L67">source</a>)</span></span></div><p class="paragraph">AutoTweaker/core 为适配器提供的 API，主要包含适配器、会话、配置的管理。</p><p class="paragraph">基础设施类的 API 通过 able 接口暴露，参见 <a href="../../io.github.autotweaker.api/-loggable/index.html">io.github.autotweaker.api.Loggable</a>、<a href="../../io.github.autotweaker.api/-traceable/index.html">io.github.autotweaker.api.Traceable</a>、<a href="../../io.github.autotweaker.api/-json-storable/index.html">io.github.autotweaker.api.JsonStorable</a>、<a href="../../io.github.autotweaker.api/-i18nable/index.html">io.github.autotweaker.api.I18nable</a>。</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">WhiteElephant-abc</p></span><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-adapter/index.html"><span><span>Adapter</span></span></a></div></span></div><div></div></div></div></div></div>    </div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -184,6 +184,23 @@
               </div>
             </div>
           </div>
+<a data-name="1124795816%2FClasslikes%2F-9267965" anchor-label="PersistenceAPI" id="1124795816%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-persistence-a-p-i/index.html"><span>Persistence</span><wbr></wbr><span><span>API</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1124795816%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-persistence-a-p-i/index.html">PersistenceAPI</a></div><div class="brief "><p class="paragraph">读取持久化数据的 API。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="1362777813%2FClasslikes%2F-9267965" anchor-label="SecretAPI" id="1362777813%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
             <div class="main-subrow keyValue ">
@@ -213,7 +230,24 @@
                 <div class="title">
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-session-a-p-i/index.html">SessionAPI</a></div><div class="brief "><p class="paragraph">管理会话、Agent和工作区，AutoTweaker AI 功能的主要 API。</p></div></div>                  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-session-a-p-i/index.html">SessionAPI</a></div><div class="brief "><p class="paragraph">管理会话，AutoTweaker AI 功能的主要 API。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="700471613%2FClasslikes%2F-9267965" anchor-label="ToolAPI" id="700471613%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tool-a-p-i/index.html"><span>Tool</span><wbr></wbr><span><span>API</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="700471613%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-tool-a-p-i/index.html">ToolAPI</a></div><div class="brief "><p class="paragraph">查询工具属性或处理工具参数。</p></div></div>                  </div>
                 </div>
               </div>
             </div>
@@ -231,6 +265,23 @@
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
 <div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-trace-a-p-i/index.html">TraceAPI</a></div><div class="brief "><p class="paragraph">trace 的管理 API，仅支持管理，包括读取和删除。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-907796706%2FClasslikes%2F-9267965" anchor-label="WorkspaceAPI" id="-907796706%2FClasslikes%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-workspace-a-p-i/index.html"><span>Workspace</span><wbr></wbr><span><span>API</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-907796706%2FClasslikes%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-workspace-a-p-i/index.html">WorkspaceAPI</a></div><div class="brief "><p class="paragraph">用于管理工作区的 API。</p></div></div>                  </div>
                 </div>
               </div>
             </div>
@@ -341,6 +392,23 @@
               </div>
             </div>
           </div>
+<a data-name="-2083981171%2FProperties%2F-9267965" anchor-label="persistence" id="-2083981171%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="persistence.html"><span><span>persistence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2083981171%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="persistence.html">persistence</a><span class="token operator">: </span><a href="-persistence-a-p-i/index.html">CoreAPI.PersistenceAPI</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="736651038%2FProperties%2F-9267965" anchor-label="secret" id="736651038%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
             <div class="main-subrow keyValue ">
@@ -375,6 +443,23 @@
               </div>
             </div>
           </div>
+<a data-name="952086902%2FProperties%2F-9267965" anchor-label="tool" id="952086902%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tool.html"><span><span>tool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="952086902%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="tool.html">tool</a><span class="token operator">: </span><a href="-tool-a-p-i/index.html">CoreAPI.ToolAPI</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="1867958247%2FProperties%2F-9267965" anchor-label="trace" id="1867958247%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
             <div class="main-subrow keyValue ">
@@ -388,6 +473,23 @@
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
 <div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="trace.html">trace</a><span class="token operator">: </span><a href="-trace-a-p-i/index.html">CoreAPI.TraceAPI</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-965236969%2FProperties%2F-9267965" anchor-label="workspace" id="-965236969%2FProperties%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="workspace.html"><span><span>workspace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-965236969%2FProperties%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="workspace.html">workspace</a><span class="token operator">: </span><a href="-workspace-a-p-i/index.html">CoreAPI.WorkspaceAPI</a></div></div>                  </div>
                 </div>
               </div>
             </div>
@@ -413,19 +515,19 @@
               </div>
             </div>
           </div>
-<a data-name="-442481436%2FFunctions%2F-9267965" anchor-label="chat" id="-442481436%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+<a data-name="-461779261%2FFunctions%2F-9267965" anchor-label="chat" id="-461779261%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
           <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="chat.html"><span><span>chat</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-442481436%2FFunctions%2F-9267965"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-461779261%2FFunctions%2F-9267965"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="chat.html"><span class="token function">chat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.llm/-core-llm-request/index.html">CoreLlmRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api.types.llm/-core-llm-result/index.html">CoreLlmResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">调用 LLM，模型、提供商必须来自配置的模型和提供商。</p></div></div>                  </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="chat.html"><span class="token function">chat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../io.github.autotweaker.api.types.llm/-llm-request/index.html">LlmRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api.types.llm/-llm-result/index.html">LlmResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">调用 LLM，模型、提供商必须来自配置的模型和提供商。</p></div></div>                  </div>
                 </div>
               </div>
             </div>

@@ -43,7 +43,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.1.0-alpha.35+c07218c5        </div>
+0.1.0+d217eb7b        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
                 <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
@@ -109,10 +109,10 @@
     <h1 class="cover"><span>Setting</span><wbr></wbr><span><span>Def</span></span></h1>
     <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
       <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
-<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">SettingDef</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="index.html">V</a><span class="token operator"> : </span><a href="../../io.github.autotweaker.api.types.config/-setting-value/index.html">SettingValue</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/config/SettingDef.kt#L35">source</a>)</span></span></div><p class="paragraph">实现此接口并打上 <code class="lang-kotlin">@AutoService(SettingDef::class)</code> 注释即可注册一个设置。</p><p class="paragraph">使用 <a href="../../io.github.autotweaker.api.base/-int-setting/index.html">io.github.autotweaker.api.base.IntSetting</a> 等基类可以省去一些声明设置的重复代码。</p><p class="paragraph">实现 <a href="../../io.github.autotweaker.api/-settable/index.html">io.github.autotweaker.api.Settable</a> 接口即可通过 <a href="../-setting-service/index.html">SettingService</a> 获取设置的当前值。</p><p class="paragraph">通过 <a href="../../io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/index.html">io.github.autotweaker.api.adapter.CoreAPI.ConfigAPI</a> 可管理所有设置。</p><p class="paragraph">AutoTweaker 通过 SPI 和 <a href="../-setting-service/index.html">SettingService</a> 来实现分布式的设置声明以及安全的取值。</p><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api.base/-setting-base/index.html">SettingBase</a></div></span></div><div></div></div></div></div></div>    </div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">SettingDef</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="index.html">V</a><span class="token operator"> : </span><a href="../../io.github.autotweaker.api.types.config/-setting-value/index.html">SettingValue</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/config/SettingDef.kt#L36">source</a>)</span></span></div><p class="paragraph">实现此接口并打上 <code class="lang-kotlin">@AutoService(SettingDef::class)</code> 注释即可注册一个设置。</p><p class="paragraph">使用 <a href="../../io.github.autotweaker.api.base/-int-setting/index.html">io.github.autotweaker.api.base.IntSetting</a> 等基类可以省去一些声明设置的重复代码。</p><p class="paragraph">通过 <a href="../../io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/index.html">io.github.autotweaker.api.adapter.CoreAPI.ConfigAPI</a> 可管理所有设置。</p><p class="paragraph">AutoTweaker 通过 SPI 和 <a href="../-setting-service/index.html">SettingService</a> 来实现分布式的设置声明以及安全的取值。</p><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api/get.html"><span><span>get</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api/set.html"><span><span>set</span></span></a></div></span></div><div></div></div></div></div><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api.base/-setting-base/index.html">SettingBase</a></div></span></div><div></div></div></div></div></div>    </div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
     <div class="tabs-section-body">
       <div data-togglable="PROPERTY">
         <h2 class="tableheader">Properties</h2>
@@ -146,6 +146,61 @@
                   <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
                     <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
 <div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="description.html">description</a><span class="token operator">: </span><a href="../../io.github.autotweaker.api.types/-localizations/index.html">Localizations</a></div><div class="brief "><p class="paragraph">设置的多语言描述，由 i18n 服务管理，也同样支持自动翻译。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="232340380%2FFunctions%2F-9267965" anchor-label="format" id="232340380%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.autotweaker.api/format.html"><span><span>format</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232340380%2FFunctions%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">SettingDef</a><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api.types.config/-setting-value/-val-string/index.html">SettingValue.ValString</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../io.github.autotweaker.api/format.html"><span class="token function">format</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>args<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">获取一个字符串 <a href="index.html">SettingDef</a> 的当前值，并通过 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(kotlin.String,kotlin.Any...)">java.lang.String.format</a> 填充字符串占位符。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1008022337%2FFunctions%2F-9267965" anchor-label="get" id="-1008022337%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.autotweaker.api/get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1008022337%2FFunctions%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api/get.html">V</a><span class="token operator"> : </span><a href="../../io.github.autotweaker.api.types.config/-setting-value/index.html">SettingValue</a><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api/get.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../../io.github.autotweaker.api/get.html">T</a><span class="token operator">&gt; </span><a href="index.html">SettingDef</a><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api/get.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../io.github.autotweaker.api/get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../io.github.autotweaker.api/get.html">T</a></div><div class="brief "><p class="paragraph">对一个 <a href="index.html">SettingDef</a> 调用 <a href="../../io.github.autotweaker.api/get.html">get</a> 可以直接从数据库拿到当前配置值。</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="484048851%2FFunctions%2F-9267965" anchor-label="set" id="484048851%2FFunctions%2F-9267965" data-filterable-set=":api/jvmMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.autotweaker.api/set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="484048851%2FFunctions%2F-9267965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api/set.html">V</a><span class="token operator"> : </span><a href="../../io.github.autotweaker.api.types.config/-setting-value/index.html">SettingValue</a><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api/set.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../../io.github.autotweaker.api/set.html">T</a><span class="token operator">&gt; </span><a href="index.html">SettingDef</a><span class="token operator">&lt;</span><a href="../../io.github.autotweaker.api/set.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../io.github.autotweaker.api/set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../io.github.autotweaker.api/set.html">T</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">对一个 <a href="index.html">SettingDef</a> 调用 <a href="../../io.github.autotweaker.api/set.html">set</a> 可以更新配置值。</p></div></div>                  </div>
                 </div>
               </div>
             </div>

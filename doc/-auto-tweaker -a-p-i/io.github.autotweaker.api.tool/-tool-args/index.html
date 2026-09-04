@@ -43,11 +43,11 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.1.0-alpha.35+c07218c5        </div>
+0.1.0+d217eb7b        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
-                <button class="platform-tag platform-selector common-like" data-active="" aria-pressed="true"
-                        data-filter=":api/commonMain">common</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":api/jvmMain">jvm</button>
             <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
                 <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
                         data-role="dropdown-toggle"
@@ -62,12 +62,12 @@
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
                         </button>
                     </div>
-                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
                             <label class="checkbox">
-                                <input type="checkbox" class="checkbox--input" id=":api/commonMain"
-                                       data-filter=":api/commonMain"/>
+                                <input type="checkbox" class="checkbox--input" id=":api/jvmMain"
+                                       data-filter=":api/jvmMain"/>
                                 <span class="checkbox--icon"></span>
-                                common
+                                jvm
                             </label>
                         </li>
                 </ul>
@@ -103,11 +103,13 @@
         </nav>
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
-<div class="main-content" data-page-type="classlike" id="content" pageIds="AutoTweaker API::io.github.autotweaker.api.tool/ToolArgs///PointingToDeclaration//410371219">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="AutoTweaker API::io.github.autotweaker.api.tool/ToolArgs///PointingToDeclaration//-9267965">
   <div class="breadcrumbs"><a href="../../../index.html">AutoTweaker API</a><span class="delimiter">/</span><a href="../index.html">io.github.autotweaker.api.tool</a><span class="delimiter">/</span><span class="current">ToolArgs</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Tool</span><wbr></wbr><span><span>Args</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ToolArgs</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/commonMain/kotlin/io/github/autotweaker/api/tool/ToolArgs.kt#L34">source</a>)</span></span></div><p class="paragraph">表示 <a href="../-tool/index.html">Tool</a> 的调用参数，可以为数据类或密封类，数据类表示此工具只有一个 function，密封类 <a href="index.html">ToolArgs</a> 的所有子类（下文称为子类）的类名将作为 function 名。对于数据类，AutoTweaker 会生成一个名为 <code class="lang-kotlin">run</code> 的 function。</p><p class="paragraph"><a href="index.html">ToolArgs</a> 内的字段可以包含几乎任何类型，<a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a>、<a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a>、数据类、密封类、嵌套的数据类。为一个字段提供默认值可以让这个字段可选，但也仅仅是可选，LLM 只知道这个参数可选，看不到默认值，除非在描述中声明。</p><p class="paragraph"><a href="index.html">ToolArgs</a> 的子类类名、参数名将转换为 LLM 看到的工具声明，<code class="lang-kotlin">PascalCase</code> 将被转换为 <code class="lang-kotlin">snake_case</code>，所以尽管写符合 kotlin 风格的类名、字段名，LLM 会看到符合 Json 习惯的 <code class="lang-kotlin">snake_case</code> 命名。由于这些命名本身直接呈现给 LLM，形参直接作为字段名，子类类名拼接到工具名称（来自 <a href="../-tool/name.html">Tool.name</a>）后，例如 <code class="lang-kotlin">read-summarize</code>。</p><p class="paragraph">可以参考 <a href="../../io.github.autotweaker.api.types.tool.args/index.html">io.github.autotweaker.api.types.tool.args</a> 下 AutoTweaker 内置工具的声明，如 <a href="../../io.github.autotweaker.api.types.tool.args/-read-args/index.html">io.github.autotweaker.api.types.tool.args.ReadArgs</a></p><p class="paragraph">子类类名、字段名都绝对不能打 <code class="lang-kotlin">@SerialName</code> 标签，这会导致 LLM 看到的参数声明与实际字段不匹配，从而导致 LLM 的调用请求在反序列化时失败。<a href="index.html">ToolArgs</a> 实现本身打了没事，但是没任何用。</p><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api.types.tool.args/-read-args/index.html"><span>Read</span><wbr></wbr><span><span>Args</span></span></a></div></span></div><div></div></div></div></div><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api.types.tool.args/-bash-args/index.html">BashArgs</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":api/commonMain" data-filterable-set=":api/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.autotweaker.api.types.tool.args/-read-args/index.html">ReadArgs</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":api/jvmMain" data-filterable-set=":api/jvmMain" data-active="" data-toggle=":api/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":api/jvmMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ToolArgs</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/AutoTweaker/core/blob/main/api/src/jvmMain/kotlin/io/github/autotweaker/api/tool/ToolArgs.kt#L24">source</a>)</span></span></div><p class="paragraph">表示 <a href="../-tool/index.html">Tool</a> 的调用参数，应该由插件自动生成。</p></div>    </div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"></div>
