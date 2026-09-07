@@ -35,6 +35,7 @@ $dokka.location:io.github.autotweaker.api.adapter/CoreAPI.AdapterAPI/stop/#io.gi
 $dokka.location:io.github.autotweaker.api.adapter/CoreAPI.ConfigAPI///PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/index.html
 $dokka.location:io.github.autotweaker.api.adapter/CoreAPI.ConfigAPI/addApiKey/#kotlin.String#kotlin.String/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/add-api-key.html
 $dokka.location:io.github.autotweaker.api.adapter/CoreAPI.ConfigAPI/getAllSettings/#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/get-all-settings.html
+$dokka.location:io.github.autotweaker.api.adapter/CoreAPI.ConfigAPI/getApiKey/#java.util.UUID/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/get-api-key.html
 $dokka.location:io.github.autotweaker.api.adapter/CoreAPI.ConfigAPI/getDefaultModel/#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/get-default-model.html
 $dokka.location:io.github.autotweaker.api.adapter/CoreAPI.ConfigAPI/getEnv/#io.github.autotweaker.api.types.config.EnvType#kotlin.String/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/get-env.html
 $dokka.location:io.github.autotweaker.api.adapter/CoreAPI.ConfigAPI/getModel/#java.util.UUID/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api.adapter/-core-a-p-i/-config-a-p-i/get-model.html
@@ -1357,6 +1358,7 @@ $dokka.location:io.github.autotweaker.api//join/kotlinx.coroutines.CoroutineScop
 $dokka.location:io.github.autotweaker.api//json/#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api/json.html
 $dokka.location:io.github.autotweaker.api//length/java.nio.file.Path#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api/length.html
 $dokka.location:io.github.autotweaker.api//line/#kotlin.Int/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api/line.html
+$dokka.location:io.github.autotweaker.api//loadService/#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api/load-service.html
 $dokka.location:io.github.autotweaker.api//log/io.github.autotweaker.api.Loggable#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api/log.html
 $dokka.location:io.github.autotweaker.api//message/kotlin.Throwable#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api/message.html
 $dokka.location:io.github.autotweaker.api//objects/io.github.autotweaker.api.ObjectStorable#/PointingToDeclaration/-auto-tweaker -a-p-i/io.github.autotweaker.api/objects.html
